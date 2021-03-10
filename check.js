@@ -102,11 +102,16 @@ function check(){
 }
 
 function forgot(){
-
-var user= document.getElementById('userforgot').value;
-var newpw=document.getElementById('newpwd').value
-var invalid = true
+  
+  var invalid = true
+  var user= document.getElementById('userforgot').value;
+  var newpw=document.getElementById('newpwd').value
+  
 users = JSON.parse(localStorage.getItem('Users'))
+  if(users == null){
+    users = []
+  }
+
 for (var i=0;i<users.length;i++){
 if (users[i]['username']==user){ 
   if(newpw.length>=8){
