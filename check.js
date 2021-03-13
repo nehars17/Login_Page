@@ -51,7 +51,7 @@ var pwd= document.getElementById('pwd').value;
       users.push(user)
       localStorage.setItem('Users', JSON.stringify(users))
       alert('Account created Successfully')
-      window.location.reload()
+      window.location.href='login.html'
      
       
       }
@@ -119,7 +119,7 @@ if (users[i]['username']==user){
   localStorage.setItem('Users', JSON.stringify(users))
   invalid=false
   alert('Password Reset Successful!')
-  window.location.reload()
+  window.location.href='login.html'
   
   }
   else{
