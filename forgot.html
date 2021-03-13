@@ -7,20 +7,28 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
 </head>
 <body>
-    <a  id='btn' href='index.html'>REGISTER</a>
     
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link"  href="index.html">Register</a>
+        </li>
+     
+        <li class="nav-item">
+          <a class=" active"  href="login.html" >Login</a>
+        </li>
+      </ul>
     
-    <a id="btn" type='button' href='login.html'>LOGIN</a>
-    <br>
-    <br>
     <form class="box" id="forms" action="" method="POST">
+       
         <h1>RESET PASSWORD</h1>
+
      <input id='userforgot'  type="text" placeholder="Enter Username" required>
      
      <input id='newpwd'  type="password" placeholder="Enter Password" required>
      <input type="submit" onclick="forgot()" value="Login">
     </form>
     <p id="disclaimer"></p>
+    <a id="forget" href="login.html">BACK</a>
     
 </body>
 

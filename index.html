@@ -6,12 +6,22 @@
    
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+
 </head>
-<body>
-    <a id="btn" type='button' href='index.html'>REGISTER</a> <a id='btn' type='button' href='login.html'>LOGIN</a>
-    <br>
-    <br>
+<body>   
+    <ul class="nav">
+        <li class="nav-item">
+          <a class=" active"  href="index.html">Register</a>
+        </li>
+     
+        <li class="nav-item">
+          <a class="nav-link"  href="login.html" >Login</a>
+        </li>
+      </ul>
+      
     <form class='box' id='forms' action="" method="POST">
+      
+        
         <h1>Register</h1>
      
      <input id='user'  type="text" placeholder="Enter Username" required>
@@ -25,4 +35,5 @@
     <p id="disclaimer"></p>
 </body>
 <script src="check.js"></script>
+
 </html>
