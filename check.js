@@ -5,6 +5,20 @@ var form= document.getElementById('forms')
 form.addEventListener('submit',handleForm)
 
 
+function register(){
+  
+  window.location.href='index.html'
+  
+  }
+  
+  function login(){
+  window.location.href='login.html'
+  
+  }
+
+
+
+
 function usercheck(){
   var invalid = true
     var user= document.getElementById('user').value;

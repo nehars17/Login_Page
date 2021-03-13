@@ -8,15 +8,14 @@
 </head>
 <body>
     
-    <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link"  href="index.html">Register</a>
-        </li>
-     
-        <li class="nav-item">
-          <a class=" active"  href="login.html" >Login</a>
-        </li>
-      </ul>
+  <div class="form-box">
+    <div class="button-box">
+    <div id="active"></div>
+    <button type="button" onclick='login()' class="toggel-btn">Login</button>
+     <button type="button" onclick='register()' class="toggel-btn">Register</button>
+    
+    </div>
+   </div>
     
     <form class="box" id="forms" action="" method="POST">
        
@@ -25,10 +24,13 @@
      <input id='userforgot'  type="text" placeholder="Enter Username" required>
      
      <input id='newpwd'  type="password" placeholder="Enter Password" required>
-     <input type="submit" onclick="forgot()" value="Login">
+     <input type="submit" onclick="forgot()" value="RESET">
+     <br>
+     <p id="disclaimer"></p>
+     
+    <a id="forget" href="login.html">Back</a>
     </form>
-    <p id="disclaimer"></p>
-    <a id="forget" href="login.html">BACK</a>
+    
     
 </body>
 
