@@ -6,7 +6,7 @@ form.addEventListener('submit',handleForm)
 
 
 function register(){
-  
+ 
   window.location.href='index.html'
   
   }
@@ -97,9 +97,8 @@ function check(){
     users = JSON.parse(localStorage.getItem('Users'))
     for (var i=0;i<users.length;i++){
     if (users[i]['username']==user2 && users[i]['password']==pwd2){
-       alert('Login Successful')
        invalid=false
-       window.location.reload()
+       window.location.href='welcome.html'
 
 
     }
